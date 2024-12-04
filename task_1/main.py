@@ -36,7 +36,7 @@ class MailViewer(QMainWindow):
         self.layout.addWidget(self.folder_list)
 
         # Подключаем IMAP клиент
-        self.imap_client = IMAPClient("imap.mail.ru", 993, "ka_ba@bk.ru", "E3fkxVUKnMC6qURSuaed")
+        self.imap_client = IMAPClient("imap.mail.ru", 993, "", "")
 
         # Загружаем папки
         self.load_mailboxes()
